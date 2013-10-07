@@ -150,6 +150,6 @@ module TimeEntryPatch
       new_comment['{user_id}']= self.user_id.to_s if new_comment['{user_id}']
       new_comment['{user}']= "#{self.user.firstname} #{self.user.lastname}" if new_comment['{user}']
       
-      "{#{new_comment}} - #{comment}"
+      "#{new_comment} - #{comment}"
     end
   end
